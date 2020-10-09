@@ -1,0 +1,27 @@
+{
+  "name": "react-hooks-view-model",
+  "version": "0.1.13",
+  "description": "An MVVM implementation written with only hooks to manage state",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "repository": "github.com/aklinker1/react-hooks-view-model",
+  "author": "Aaron Klinker <aaronklinker1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf lib && tsc -p .",
+    "compile": "tsc --noEmit -p .",
+    "pack-local": "rm *.tgz; npm pack"
+  },
+  "dependencies": {
+    "lodash.get": "^4.4.2",
+    "lodash.has": "^4.5.2",
+    "lodash.set": "^4.3.2",
+    "react-hooks-global-state": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/lodash.get": "^4.4.6",
+    "@types/lodash.has": "^4.5.6",
+    "@types/lodash.set": "^4.3.6",
+    "typescript": "^4.0.3"
+  }
+}

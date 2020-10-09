@@ -1,0 +1,40 @@
+.TodoListItem {
+  width: 400px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: background-color 200ms;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+
+  .checkmark {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    margin-right: 16px;
+    height: 24px;
+    line-height: 24px;
+  }
+
+  span {
+    flex: 1;
+  }
+
+  .delete {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+  &:hover .delete {
+    opacity: 1;
+  }
+}
