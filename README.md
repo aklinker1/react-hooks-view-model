@@ -35,7 +35,7 @@ export function useTodoListViewModel() {
 }
 ```
 
-A view model like that can be re-used by multiple components at the same time.
+A view model like that can be re-used by multiple components at the same time, and they will all share the same base "state".
 
 ```ts
 /**
